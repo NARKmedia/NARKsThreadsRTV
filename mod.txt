@@ -1,0 +1,13 @@
+[mod]
+id="nark_threads"
+name="NARK's Threads"
+version="0.1.2"
+author="NARK"
+description="Four Flannels and Pro Gloves in Grey, Black, Tan and Blue."
+priority=970
+replace_files=false
+
+[autoload]
+NARK_Threads="res://NARK_Threads/Main.gd"
+
+[registry]

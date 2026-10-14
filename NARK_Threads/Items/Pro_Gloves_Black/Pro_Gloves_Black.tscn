@@ -1,0 +1,34 @@
+[gd_scene format=3]
+
+[ext_resource type="PhysicsMaterial" path="res://Items/Physics/Item_Physics.tres" id="1"]
+[ext_resource type="Script" path="res://Scripts/Pickup.gd" id="2"]
+[ext_resource type="Resource" path="res://NARK_Threads/Items/Pro_Gloves_Black/Pro_Gloves_Black.tres" id="3"]
+[ext_resource type="Script" path="res://Scripts/SlotData.gd" id="4"]
+[ext_resource type="ArrayMesh" path="res://Items/0 - Shared/MS_Gloves.obj" id="5"]
+[ext_resource type="Material" path="res://NARK_Threads/Items/Pro_Gloves_Black/Assets/MT_World.tres" id="6"]
+
+[sub_resource type="Resource" id="Resource_cr3ge"]
+script = ExtResource("4")
+itemData = ExtResource("3")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yaep2"]
+size = Vector3(0.18, 0.05, 0.2)
+
+[node name="NARK_Threads_ProGloves_Black" type="RigidBody3D" node_paths=PackedStringArray("mesh", "collision") groups=["Item"]]
+collision_layer = 4
+collision_mask = 29
+physics_material_override = ExtResource("1")
+script = ExtResource("2")
+slotData = SubResource("Resource_cr3ge")
+mesh = NodePath("Mesh")
+collision = NodePath("Collision")
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+layers = 4
+visibility_range_end = 25.0
+mesh = ExtResource("5")
+surface_material_override/0 = ExtResource("6")
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0253516, 0)
+shape = SubResource("BoxShape3D_yaep2")
