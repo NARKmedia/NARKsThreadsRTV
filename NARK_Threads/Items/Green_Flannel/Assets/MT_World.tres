@@ -1,11 +1,10 @@
 [gd_resource type="ShaderMaterial" format=3]
 
 [ext_resource type="Shader" path="res://Shaders/Standard.gdshader" id="1"]
-[ext_resource type="Texture2D" path="res://NARK_Threads/Items/Green_Flannel/Assets/World_Albedo.res" id="2"]
 
 [resource]
 shader = ExtResource("1")
-shader_parameter/albedo = ExtResource("2")
+shader_parameter/albedo = null
 shader_parameter/normal = null
 shader_parameter/tint = Color(1, 1, 1, 1)
 shader_parameter/limiter = 0.1

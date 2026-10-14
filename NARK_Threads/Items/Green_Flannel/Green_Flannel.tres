@@ -1,7 +1,6 @@
 [gd_resource type="Resource" script_class="ItemData" format=3]
 
 [ext_resource type="Script" path="res://Scripts/ItemData.gd" id="1"]
-[ext_resource type="Texture2D" path="res://NARK_Threads/Items/Green_Flannel/Assets/Icon.res" id="2"]
 [ext_resource type="Material" path="res://NARK_Threads/Items/Green_Flannel/Assets/MT_Sleeves.tres" id="3"]
 [ext_resource type="PackedScene" path="res://NARK_Threads/Items/Green_Flannel/Green_Flannel_2x2.tscn" id="4"]
 
@@ -18,7 +17,7 @@ weight = 1.7
 value = 225
 rarity = 1
 size = Vector2(2, 2)
-icon = ExtResource("2")
+icon = null
 tetris = ExtResource("4")
 audio = null
 slots = ["Torso"]

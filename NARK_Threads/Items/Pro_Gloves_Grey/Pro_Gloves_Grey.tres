@@ -1,6 +1,5 @@
 [gd_resource type="Resource" script_class="ItemData" format=3]
 
-[ext_resource type="Texture2D" path="res://NARK_Threads/Items/Pro_Gloves_Grey/Assets/Icon.res" id="1"]
 [ext_resource type="Material" path="res://NARK_Threads/Items/Pro_Gloves_Grey/Assets/MT_Gloves.tres" id="2"]
 [ext_resource type="Script" path="res://Scripts/ItemData.gd" id="3"]
 [ext_resource type="PackedScene" path="res://NARK_Threads/Items/Pro_Gloves_Grey/Pro_Gloves_Grey_1x1.tscn" id="4"]
@@ -17,7 +16,7 @@ type = "Clothing"
 weight = 0.1
 value = 90
 rarity = 1
-icon = ExtResource("1")
+icon = null
 tetris = ExtResource("4")
 audio = null
 slots = ["Hands"]
